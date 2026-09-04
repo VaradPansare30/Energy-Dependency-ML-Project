@@ -121,7 +121,7 @@ with st.sidebar:
 # ===============================
 base_df["point_size"] = 18
 
-fig = px.scatter_mapbox(
+fig = px.scatter_map(
     base_df,
     lat="Latitude",
     lon="Longitude",
@@ -134,8 +134,8 @@ fig = px.scatter_mapbox(
 )
 
 fig.update_layout(
-    mapbox_style="open-street-map",
-    mapbox_center={"lat": 19.7515, "lon": 75.7139},
+    map_style="open-street-map",
+    map_center={"lat": 19.7515, "lon": 75.7139},
     margin={"r": 0, "t": 30, "l": 0, "b": 0}
 )
 
